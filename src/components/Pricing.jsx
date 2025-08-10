@@ -4,9 +4,9 @@ function Pricing() {
   return (
     <div>
         <h1 className='text-6xl tracking-tight font-extralight  text-center mt-20 mb-10 lg:mt-10 '>Pricing</h1>
-          <div className='flex flex-wrap w-full lg:ml-[10vw] justify-center items-center '>
+          <div className='flex flex-wrap w-full  justify-center items-center '>
             <div className='lg:w-1/3 w-full text-center'>
-              <div className='m-7'>
+              <div className="">
                    <h1 className='text-3xl font-semibold'>Free </h1>
                    <span className='text-2xl'>$0 </span>
                     <span className='text-neutral-500 text-sm'> /month </span> 

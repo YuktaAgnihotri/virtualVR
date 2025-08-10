@@ -11,7 +11,7 @@ function App() {
   
 
   return (
-   < div className='bg-neutral-400'>
+   < div className='bg-neutral-400 w-full'>
    <Navbar/>
    <div className="max-w-7xl mx-auto px-6 pt-20">
     <Hero/>
