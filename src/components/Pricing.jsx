@@ -1,8 +1,9 @@
 import React from 'react'
-
+import Navbar from './navbar'
 function Pricing() {
   return (
     <div>
+      <Navbar/>
         <h1 className='text-6xl tracking-tight font-extralight  text-center mt-20 mb-10 lg:mt-10 '>Pricing</h1>
           <div className='flex flex-wrap w-full  justify-center items-center '>
             <div className='lg:w-1/3 w-full text-center'>

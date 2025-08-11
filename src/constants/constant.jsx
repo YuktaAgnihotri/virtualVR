@@ -1,8 +1,8 @@
+
 export const navitems = [
-    {label:"Features" , href:"#"},
-       {label:"workflow" , href:"#"},
-         {label:"pricing" , href:"#"},
-           {label:"Testimonials" , href:"#"}
+    // {label:"Features" , path: "/FeaturesSection"},
+         {label:"pricing" , path:"Pricing"},
+           {label:"Testimonials" , path:"Testimonial"}
 ]
 const mystyle ={
   width: "35px",
