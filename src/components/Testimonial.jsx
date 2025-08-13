@@ -9,8 +9,8 @@ import Navbar from './navbar'
 function Testimonial() {
   return (
     <div>
-      <Navbar/>
-        <h1 className=' text-5xl  mt-20 lg:m-10 tracking-tight  text-center '> What Are People Saying</h1>
+      {/* <Navbar/> */}
+        <h1 section id='TestimonialId' className=' text-5xl  mt-20 lg:m-10 tracking-tight  text-center '> What Are People Saying</h1>
          <div className='flex flex-wrap text-center w-[80vw] m-auto'>
               <div className='w-full lg:w-1/3'>
               <p className='text-neutral-800 m-2 p-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam libero doloremque aut culpa sit dolores nostrum. Ab neque provident ex quasi, perspiciatis praesentium rerum exercitationem.</p>

@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 import Sign from './Sign';
 import CreateAccount from './CreateAccount';
 import {useNavigate} from 'react-router-dom'
-
+import { HashLink } from 'react-router-hash-link';
+import { Outlet } from "react-router-dom";
 function Navbar() {
  const navigate = useNavigate(); 
   const[mobileDrawer,setMobileDrawer] = useState(false);
@@ -22,28 +23,34 @@ const CreateAcc =()=>{
    navigate('/CreateAccount');
 };
   return (
-   <nav className=' w-full sticky z-50 top-0 py-3 backdrop-blur-lg'>
+
+   <nav  section id = "homeId" className=' w-full sticky z-50 top-0 py-3 backdrop-blur-lg'>
     <div className="container px-4 mx-auto relative text-sm">
       <div className="flex justisfy-between item-center">
         <div className="flex item-center flex-shrink-0">
           <img className='h-10 w-10 mr-2'  src={logo}alt="img" />
-          <span className='text-xl tracking-tight '> <Link to='/'> Virtual VR </Link> </span>
+          <span className='text-xl tracking-tight '> <HashLink to='#homeId'> Virtual VR </HashLink> </span>
         </div>
         <ul className=' hidden lg:flex  ml-14 space-x-12'>
-         {navitems.map((item,index) => (
+         {/* {navitems.map((item,index) => (
           <li key={index}>
              <a href={item.path}>    {item.label}   </a>
           </li>
-        ))}
+        ))} */}
+        <li> <HashLink smooth to="/#FeatureId"> Features</HashLink> </li>
+        <li> <HashLink smooth to="/#PricingId" > Pricing </HashLink> </li> 
+         <li> <HashLink smooth to='/#TestimonialId'> Testimonial </HashLink> </li>
+        {/* <li> <HashLink></HashLink> </li> */}
         </ul>
         <div className='hidden lg:flex justify-center  items-end space-x-12 ml-[28vw] '> 
-           <button  onClick={SignIn}className='py-2 px-3 border rounded-md'> 
+           <button  onClick={()=> window.open('/Sign' , '_blank')}className='py-2 px-3 border rounded-md'> 
                  Sign In
             </button>
-            <button onClick={CreateAcc}  className=' bg-gradient-to-r from-purple-400 to-purple-800 py-2 px-3 rounded-md'> 
-         
+         <Outlet/>
+            <button onClick={()=>window.open('/CreateAccount' , "_blank")}  className=' bg-gradient-to-r from-purple-400 to-purple-800 py-2 px-3 rounded-md'> 
             Create Account
             </button>  
+            <Outlet/>
         </div>
         <div className='lg:hidden md:flex-col justify-end'>
         <button onClick={toggleNavBar}>

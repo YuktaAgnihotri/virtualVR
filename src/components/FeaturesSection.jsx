@@ -11,7 +11,7 @@ const FeaturesSection = () => {
     
     <div>
    
-        <div className='realtive mt-20 min-h-[800px]'>
+        <div section id='FeatureId' className='realtive mt-20 min-h-[800px]'>
             <div className='text-center'>
                 <div className=' text-purple-500 rounded-full h-6 text-lg font-medium px-2 py-1 uppercase'>
                   Feature

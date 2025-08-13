@@ -7,33 +7,44 @@ import FeaturesSection from './components/FeaturesSection'
 import Pricing from './components/Pricing'
 import Testimonial from './components/Testimonial'
 import Footer from './components/footer'
-import { Route , Routes,useNavigate } from 'react-router-dom'
+import { Route , Routes} from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import Sign from './components/Sign'
 import CreateAccount from './components/CreateAccount'
+import AuthContext from './components/AuthContext'
 // import { Features } from 'tailwindcss'
 function App() {
   
 
   return (
-   < div className='bg-neutral-400 w-full'>
+  <AuthContext>
+
+
+ 
+   < div className='bg-neutral-400 w-full h-full relative top-0'>
    
    
     <Routes>
-    <Route  path="/" element={<Navbar/>}></Route>
-     {/* <Route  path="/FeaturesSection" element={<FeaturesSection/>}></Route> */}
-      <Route  path="/Pricing" element={<Pricing/>}></Route>
-     <Route  path="/Testimonial" element={<Testimonial/>}></Route>
-       <Route  path="/Sign" element={<Sign/>}></Route>
-         <Route  path="/CreateAccount" element={<CreateAccount/>}></Route>
-   </Routes>
-     
-   <div className="max-w-7xl mx-auto px-6 pt-20">
-    <Hero/>
-    <FeaturesSection/>
-    <Footer/>
+       <Route  path="/" element={
+    <div className="max-w-7xl mx-auto px-6 pt-20 ">
+      <Navbar/>
+       <Hero/>
+       <FeaturesSection/>
+      <Pricing/>
+      <Testimonial/>
+      <Footer/>  
    </div>
-   </div>
-  )
-}
+    
+       }></Route>
 
-export default App
+        <Route  path="/FeaturesSection" element={<FeaturesSection/>}></Route> 
+        <Route  path="/Pricing" element={<Pricing/>}></Route>
+       <Route  path="/Testimonial" element={<Testimonial/>}></Route>
+       <Route  path="/Sign" element={<Sign/>}></Route>
+      <Route  path="/CreateAccount" element={<CreateAccount/>}></Route>
+    </Routes>
+     </div>
+    </AuthContext>
+);
+}
+export default App;

@@ -1,6 +1,6 @@
 
 export const navitems = [
-    // {label:"Features" , path: "/FeaturesSection"},
+    //{label:"Features" , path: "/FeaturesSection"},
          {label:"pricing" , path:"Pricing"},
            {label:"Testimonials" , path:"Testimonial"}
 ]
