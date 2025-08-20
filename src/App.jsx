@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 
 import './App.css'
-import Navbar from './components/navbar'
+import Navbar from './components/Navbar'
 import Hero from './components/hero'
 import FeaturesSection from './components/FeaturesSection'
 import Pricing from './components/Pricing'
