@@ -36,8 +36,8 @@ function App() {
      
         <Route path='/' element={<MainLayout/>} />
       
-       <Route  path="/Sign" element={<Sign/>}></Route>
-      <Route  path="/CreateAccount" element={<CreateAccount/>}></Route>
+       <Route  path="/Sign" element={<Sign/>}> />
+      <Route  path="/CreateAccount" element={<CreateAccount/>}> />
     </Routes>
      </div>
     </AuthContext>
