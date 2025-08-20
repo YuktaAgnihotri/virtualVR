@@ -1,30 +1,25 @@
 import React from 'react'
 import logo from '../assets/logo.png'
-import { navitems } from '../constants/constant'
+import { navitems,menu } from '../constants/constant'
 import { useState } from 'react';
-import { menu } from '../constants/constant';
-import { Link } from 'react-router-dom';
-import Sign from './Sign';
-import CreateAccount from './CreateAccount';
-import {useNavigate} from 'react-router-dom'
+//import { menu } from '../constants/constant';
+//import { Link } from 'react-router-dom';
+//import Sign from './Sign';
+//import CreateAccount from './CreateAccount';
+//import {useNavigate} from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 //import { Outlet } from "react-router-dom";
 function Navbar() {
- const navigate = useNavigate(); 
+ 
   const[mobileDrawer,setMobileDrawer] = useState(false);
 
   function toggleNavBar(){
    setMobileDrawer(!mobileDrawer)
   }
-const SignIn = ()=>{
-  navigate('/Sign');
-};
-const CreateAcc =()=>{
-   navigate('/CreateAccount');
-};
+
   return (
 
-   <nav  section id = "homeId" className=' w-full sticky z-50 top-0 py-3 backdrop-blur-lg'>
+   <nav   id = "homeId" className=' w-full sticky z-50 top-0 py-3 backdrop-blur-lg'>
     <div className="container px-4 mx-auto relative text-sm">
       <div className="flex justisfy-between item-center">
         <div className="flex item-center flex-shrink-0">
