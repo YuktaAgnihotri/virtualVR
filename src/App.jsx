@@ -24,7 +24,7 @@ function MainLayout(){
       <Testimonial />
       <Footer />
     </div>
-      )
+      );
 }
 function App() {
 
