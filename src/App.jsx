@@ -13,34 +13,29 @@ import Sign from './components/Sign'
 import CreateAccount from './components/CreateAccount'
 import AuthContext from './components/AuthContext'
 // import { Features } from 'tailwindcss'
+
+function MainLayout(){
+   <div className="max-w-7xl mx-auto px-6 pt-20">
+      <Navbar />
+      <Hero />
+      <FeaturesSection />
+      <Pricing />
+      <Testimonial />
+      <Footer />
+    </div>
+  );
+
+}
 function App() {
-  
 
   return (
   <AuthContext>
-
-
- 
    < div className='bg-neutral-400 w-full h-full relative top-0'>
-   
-   
+     
     <Routes>
-       <Route  path="/" element={
-    <div className="max-w-7xl mx-auto px-6 pt-20 ">
-      <Navbar/>
-       <Hero/>
-       <FeaturesSection/>
-      <Pricing/>
-      <Testimonial/>
-      <Footer/>  
-   </div>
-    
-       }></Route>
-
-        <Route  path="/FeaturesSection" element={<FeaturesSection/>}>
-        <Route  path="/Pricing" element={<Pricing/>}>
-       <Route  path="/Testimonial" element={<Testimonial/>}>
-       </Route>
+     
+        <Route path='/' element={<MainLayout/>} />
+      
        <Route  path="/Sign" element={<Sign/>}></Route>
       <Route  path="/CreateAccount" element={<CreateAccount/>}></Route>
     </Routes>
