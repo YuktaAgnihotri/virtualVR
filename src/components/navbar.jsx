@@ -8,7 +8,7 @@ import Sign from './Sign';
 import CreateAccount from './CreateAccount';
 import {useNavigate} from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
-import { Outlet } from "react-router-dom";
+//import { Outlet } from "react-router-dom";
 function Navbar() {
  const navigate = useNavigate(); 
   const[mobileDrawer,setMobileDrawer] = useState(false);
@@ -46,11 +46,11 @@ const CreateAcc =()=>{
            <button  onClick={()=> window.open('/#/Sign' , '_blank')}className='py-2 px-3 border rounded-md'> 
                  Sign In
             </button>
-         <Outlet/>
+         
             <button onClick={()=>window.open('/#/CreateAccount' , "_blank")}  className=' bg-gradient-to-r from-purple-400 to-purple-800 py-2 px-3 rounded-md'> 
             Create Account
             </button>  
-            <Outlet/>
+          
         </div>
         <div className='lg:hidden md:flex-col justify-end'>
         <button onClick={toggleNavBar}>
