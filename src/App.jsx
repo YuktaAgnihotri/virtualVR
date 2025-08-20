@@ -37,9 +37,10 @@ function App() {
     
        }></Route>
 
-        <Route  path="/FeaturesSection" element={<FeaturesSection/>}></Route> 
-        <Route  path="/Pricing" element={<Pricing/>}></Route>
-       <Route  path="/Testimonial" element={<Testimonial/>}></Route>
+        <Route  path="/FeaturesSection" element={<FeaturesSection/>}>
+        <Route  path="/Pricing" element={<Pricing/>}>
+       <Route  path="/Testimonial" element={<Testimonial/>}>
+       </Route>
        <Route  path="/Sign" element={<Sign/>}></Route>
       <Route  path="/CreateAccount" element={<CreateAccount/>}></Route>
     </Routes>
