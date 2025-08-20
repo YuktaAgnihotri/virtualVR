@@ -15,6 +15,7 @@ import AuthContext from './components/AuthContext'
 // import { Features } from 'tailwindcss'
 
 function MainLayout(){
+   return(
    <div className="max-w-7xl mx-auto px-6 pt-20">
       <Navbar />
       <Hero />
@@ -23,6 +24,7 @@ function MainLayout(){
       <Testimonial />
       <Footer />
     </div>
+      )
   );
 
 }
@@ -37,7 +39,7 @@ function App() {
         <Route path='/' element={<MainLayout/>} />
       
        <Route  path="/sign" element={<Sign/>}> />
-      <Route  path="/createAccount" element={<CreateAccount/>}> />
+      <Route  path="/createaccount" element={<CreateAccount/>}> />
     </Routes>
      </div>
     </AuthContext>
