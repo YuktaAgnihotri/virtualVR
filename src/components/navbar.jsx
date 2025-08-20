@@ -43,11 +43,11 @@ const CreateAcc =()=>{
         {/* <li> <HashLink></HashLink> </li> */}
         </ul>
         <div className='hidden lg:flex justify-center  items-end space-x-12 ml-[28vw] '> 
-           <button  onClick={()=> window.open('/Sign' , '_blank')}className='py-2 px-3 border rounded-md'> 
+           <button  onClick={()=> window.open('/#/Sign' , '_blank')}className='py-2 px-3 border rounded-md'> 
                  Sign In
             </button>
          <Outlet/>
-            <button onClick={()=>window.open('/CreateAccount' , "_blank")}  className=' bg-gradient-to-r from-purple-400 to-purple-800 py-2 px-3 rounded-md'> 
+            <button onClick={()=>window.open('/#/CreateAccount' , "_blank")}  className=' bg-gradient-to-r from-purple-400 to-purple-800 py-2 px-3 rounded-md'> 
             Create Account
             </button>  
             <Outlet/>
