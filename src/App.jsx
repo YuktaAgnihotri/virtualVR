@@ -36,7 +36,7 @@ function App() {
      
         <Route path='/' element={<MainLayout/>} />
       
-       <Route  path="/sign" element={<Sign/>}> />
+       <Route  path="/sign" element={<Sign/>} />
       <Route  path="/createaccount" element={<CreateAccount/>}> />
     </Routes>
      </div>
