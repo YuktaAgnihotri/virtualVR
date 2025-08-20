@@ -25,8 +25,6 @@ function MainLayout(){
       <Footer />
     </div>
       )
-  );
-
 }
 function App() {
 
