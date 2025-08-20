@@ -47,7 +47,7 @@ const CreateAcc =()=>{
                  Sign In
             </button>
          
-            <button onClick={()=>window.open('/#/createAccount' , "_blank")}  className=' bg-gradient-to-r from-purple-400 to-purple-800 py-2 px-3 rounded-md'> 
+            <button onClick={()=>window.open('/#/createaccount' , "_blank")}  className=' bg-gradient-to-r from-purple-400 to-purple-800 py-2 px-3 rounded-md'> 
             Create Account
             </button>  
           
