@@ -8,7 +8,7 @@ import Pricing from './components/Pricing'
 import Testimonial from './components/Testimonial'
 import Footer from './components/footer'
 import { Route , Routes} from 'react-router-dom'
-import { HashLink } from 'react-router-hash-link'
+//import { HashLink } from 'react-router-hash-link'
 import Sign from './components/Sign'
 import CreateAccount from './components/CreateAccount'
 import AuthContext from './components/AuthContext'
@@ -30,7 +30,7 @@ function App() {
 
   return (
   <AuthContext>
-   < div className='bg-neutral-400 w-full h-full relative top-0'>
+   <div className='bg-neutral-400 w-full h-full relative top-0'>
      
     <Routes>
      
