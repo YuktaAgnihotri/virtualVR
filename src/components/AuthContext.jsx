@@ -15,7 +15,7 @@ function AuthContext({children}) {
  }
 
   return (
- <Auth.Provider value={{username,setusername,Password, setPassword , user , setuser,login }}>
+ <Auth.Provider value={{username,setusername,Password, setPassword }}>
 {children}
  </Auth.Provider>
    
