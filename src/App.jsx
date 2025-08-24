@@ -11,7 +11,7 @@ import { Route , Routes} from 'react-router-dom'
 //import { HashLink } from 'react-router-hash-link'
 import Sign from './components/Sign'
 import CreateAccount from './components/CreateAccount'
-import {Auth} from './components/AuthContext'
+import {AuthContext} from './components/AuthContext'
 // import { Features } from 'tailwindcss'
 
 function MainLayout(){
@@ -29,7 +29,7 @@ function MainLayout(){
 function App() {
 
   return (
-  <Auth.Provider value ={{username,setusername,Password , setpassword,user,setuser,login}}>
+  <AuthContext>
      
      
    <div className='bg-neutral-400 w-full h-full relative top-0'>
@@ -42,7 +42,7 @@ function App() {
       <Route  path="/createaccount" element={<CreateAccount/>} />
     </Routes>
      </div>
-   </Auth.Provider> 
+   </AuthContext> 
 );
 }
 export default App;
