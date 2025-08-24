@@ -5,7 +5,7 @@ import Archive from '../assets/archive.svg'
 import Sliders from '../assets/sliders.svg'
 import Clip from '../assets/clipboard.svg'
 import Tool from '../assets/tool.svg'
-import Navbar from './Navbar'
+//import Navbar from './Navbar'
 const FeaturesSection = () => {
   return (
     
