@@ -10,9 +10,7 @@ const {username,setusername,Password ,setPassword} = useContext(Auth);
   const HandleSubmit = (e)=>{
       e.preventDefault();
     onLogin();
-  }  const ctx = useContext(Auth);
-console.log("Context value:", ctx);
-
+  } 
   return (
   
        <div className=' m-auto w-[50vw] h-[70vh] bg-amber-100 text-center border-2 ' >
