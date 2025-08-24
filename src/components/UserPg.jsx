@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import {Auth} from "./AuthContext"
 function UserPg() {  
   const {user,logout }= useContext(Auth);
