@@ -5,7 +5,7 @@ import p3 from '../assets/p3.jpeg'
 import p4 from '../assets/p4.jpeg'
 import p5 from '../assets/p5.jpeg'
 import p6 from '../assets/p6.jpeg'
-import Navbar from './navbar'
+//import Navbar from './navbar'
 function Testimonial() {
   return (
     <div>
