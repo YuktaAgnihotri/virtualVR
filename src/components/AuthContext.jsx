@@ -13,6 +13,11 @@ function AuthContext({children}) {
  const login = ()=>{
     setuser(username);
  }
+  const logout = () => {
+  setuser(null);
+  setusername("");
+  setPassword("");
+};
 
   return (
  <Auth.Provider value={{username,setusername,Password, setPassword , user,setuser , login }}>
