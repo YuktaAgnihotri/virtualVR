@@ -4,7 +4,7 @@ import UserPg from './UserPg';
 import { useContext } from 'react';
 import {Auth} from './AuthContext';
 function SignLayout({onLogin}){
-const {username,setusername,Password ,setPassword, login} = useContext(Auth);
+const {username,setusername,Password ,setPassword} = useContext(Auth);
   const HandleSubmit = (e)=>{
       e.preventDefault();
     onLogin();
