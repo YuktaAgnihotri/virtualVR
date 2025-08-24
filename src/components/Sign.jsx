@@ -1,8 +1,9 @@
 import React from 'react'
 import { Outlet } from "react-router-dom";
 import UserPg from './UserPg';
-import { useContext } from 'react';
 import {Auth} from './AuthContext';
+import {useState , useContext} from "react";
+
 function SignLayout({onLogin}){
 const {username,setusername,Password ,setPassword} = useContext(Auth);
   const HandleSubmit = (e)=>{
@@ -41,7 +42,7 @@ function Sign() {
 const [isclick ,setisclick] = useState(false); 
   return(
     <>
-      {isclick ? <Userpg/> : <SignLayout/> }
+      {isclick ? <Userpg/> : <SignLayout onLogin {()=> setisclick(true)} /> }
     </>
   );
   
