@@ -42,7 +42,7 @@ function Sign() {
 const [isclick ,setisclick] = useState(false); 
   return(
     <>
-      {isclick ? <Userpg/> : <SignLayout onLogin {()=> setisclick(true)} /> }
+      {isclick ? <Userpg/> : <SignLayout onLogin =  {()=> setisclick(true)} /> }
     </>
   );
   
