@@ -15,11 +15,11 @@ function AuthContext({children}) {
  }
 
   return (
- <Auth.Provider value={{username,setusername,Password, setPassword }}>
+ <Auth.Provider value={{username,setusername,Password, setPassword , user,setuser , login }}>
 {children}
  </Auth.Provider>
    
-  )
+  );
 }
 
 export default AuthContext;
