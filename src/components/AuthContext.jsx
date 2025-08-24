@@ -6,8 +6,8 @@ import { useState } from 'react';
 export const Auth = createContext();
 
 function AuthContext({children}) {
-  const[username,setusername] = useState(".");
-  const [Password, setPassword] = useState(".");
+  const[username,setusername] = useState("");
+  const [Password, setPassword] = useState("");
   const[user , setuser] = useState(null);
 
  const login = ()=>{
