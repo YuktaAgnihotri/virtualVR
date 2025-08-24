@@ -11,7 +11,7 @@ import { Route , Routes} from 'react-router-dom'
 //import { HashLink } from 'react-router-hash-link'
 import Sign from './components/Sign'
 import CreateAccount from './components/CreateAccount'
-import {AuthContext} from './components/AuthContext'
+import AuthContext from './components/AuthContext'
 // import { Features } from 'tailwindcss'
 
 function MainLayout(){
