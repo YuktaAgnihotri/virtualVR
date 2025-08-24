@@ -22,4 +22,4 @@ function AuthContext({children}) {
   )
 }
 
-export default AuthContext
+export default AuthContext;
