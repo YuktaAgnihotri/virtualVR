@@ -8,7 +8,7 @@ export const Auth = createContext();
 function AuthContext({children}) {
   const[username,setusername] = useState("");
   const [Password, setPassword] = useState("");
-  const[user , setuser] = useState(null);
+  const[user , setuser] = useState("");
 
  const login = ()=>{
     setuser(username);
@@ -17,6 +17,7 @@ function AuthContext({children}) {
   setuser(null);
   setusername("");
   setPassword("");
+  
 };
 
   return (

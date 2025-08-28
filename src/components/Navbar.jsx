@@ -51,11 +51,18 @@ function Navbar() {
         <button onClick={toggleNavBar}>
          {mobileDrawer ? (<>X 
           <ul className='relative-2 text-lg font-semibold'>
-          {navitems.map((item,index) => (
-          <li key={index}>
-             <a href={item.path}>    {item.label}   </a>
-          </li>
-        ))} </ul> 
+        <li> <HashLink smooth to="/#FeatureId"> Features</HashLink> </li>
+        <li> <HashLink smooth to="/#PricingId" > Pricing </HashLink> </li> 
+         <li> <HashLink smooth to='/#TestimonialId'> Testimonial </HashLink> </li>
+          </ul>
+           <button  onClick={()=> window.open('/#/sign' , '_blank')}className='py-2 px-3 m-2 border rounded-md'> 
+                 Sign In
+            </button>
+         
+            <button onClick={()=>window.open('/#/createaccount' , "_blank")}  className=' bg-gradient-to-r from-purple-400 to-purple-800 py-2 px-3 rounded-md'> 
+            Create Account
+            </button> 
+        
          <ul className=' hidden lg:flex  ml-14 space-x-12 '>
        { /* {navitems.map((item,index) => (
           <li key={index}>
@@ -65,7 +72,7 @@ function Navbar() {
         </ul>
         </> 
         ) : (
-          <ul className=' '> {/* Wrap the mapped items in a parent element like a ul */}
+          <ul className='ml-[2vw]'> {/* Wrap th mapped items in a parent element like a ul */}
             {menu.map((item, index) => (
               <li key={index}> {/* Use a unique key for list items */}
                 {item.content}
