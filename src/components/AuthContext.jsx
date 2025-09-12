@@ -1,8 +1,12 @@
+import { signOut } from 'firebase/auth';
 import React from 'react'
 import { createContext } from 'react'
 import { useState } from 'react';
+import { firebaseapp } from './firebase';
+import { getAuth } from 'firebase/auth';
 
 
+const firebaseAuth = getAuth(firebaseapp);
 export const Auth = createContext();
 
 function AuthContext({children}) {
@@ -17,6 +21,7 @@ function AuthContext({children}) {
   setuser(null);
   setusername("");
   setPassword("");
+  signOut(firebaseAuth);
   
 };
 
