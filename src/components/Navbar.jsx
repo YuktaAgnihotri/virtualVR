@@ -24,7 +24,7 @@ function Navbar() {
       <div className="flex justisfy-between item-center">
         <div className="flex item-center flex-shrink-0">
           <img className='h-10 w-10 mr-2'  src={logo}alt="img" />
-          <span className='text-xl tracking-tight '> <HashLink to='#homeId'> Virtual VR </HashLink> </span>
+          <span className='text-xl tracking-tight '> <HashLink to='#homeId'> PromptNExt</HashLink> </span>
         </div>
         <ul className=' hidden lg:flex  ml-14 space-x-12'>
          {/* {navitems.map((item,index) => (
