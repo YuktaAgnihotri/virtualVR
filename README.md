@@ -1,6 +1,12 @@
 #Live Link - https://virtual-vr-ivory.vercel.app/
-#setup
 
+
+PromptNext | React, JavaScript, Firebase, Tailwind CSS
+• Developed a developer productivity platform offering AI-assisted prompts for resume enhancement and code review.
+• Implemented Firebase Authentication for secure access and built a responsive UI using Tailwind CSS.
+• Designed reusable components and optimized navigation for a seamless user experience.
+
+#setup
 React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
