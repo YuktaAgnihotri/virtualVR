@@ -98,8 +98,7 @@ useEffect(()=>{
               onClick={signEmail}> Submit </button>
               <br/>
 
-            <button type='button' className='bg-neutral-300 rounded pr-8 pl-8 ' 
-            onClick={signGoogle}>SignUp with <img src={google}  alt="img" className='w-10 h-10 m-auto'  />  </button>
+            
             </form>
           </div>
        <Outlet/>
