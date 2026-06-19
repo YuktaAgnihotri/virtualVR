@@ -1,4 +1,4 @@
-#Live Link - https://virtual-vr-ivory.vercel.app/#/#FeatureId
+#Live Link - https://virtual-vr-ivory.vercel.app/
 #setup
 
 React + Vite
