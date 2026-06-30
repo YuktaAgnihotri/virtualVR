@@ -129,6 +129,7 @@ function CreateAccount() {
             Sign In
             </button>  </div> </p>
 
+<<<<<<< HEAD
             {/* <button
               type='button'
               className='bg-neutral-300 rounded pr-8 pl-8 flex items-center justify-center gap-2'
@@ -141,6 +142,14 @@ function CreateAccount() {
         <Outlet />
       </div>
     );
+=======
+            
+            </form>
+          </div>
+       <Outlet/>
+       </div>
+ )
+>>>>>>> f26089ceaa6be2f63adb0964a9c2bea6ce5682d2
   }
 
   return (
