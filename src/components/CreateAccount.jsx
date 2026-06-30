@@ -124,18 +124,17 @@ function CreateAccount() {
               className='p-2 m-4 pr-10 pl-10 rounded bg-green-300 hover:bg-green-700'
               onClick={signEmail}
             > Submit </button>
-          <p className='text-[13px]'> Already have a account
-             <div>  <button onClick={()=>window.open('/#/sign' , "_blank")}  className=' underline hover:bg-neutral-400 py-2 px-3 rounded-md'> 
-            Sign In
-            </button>  </div> </p>
 
-            {/* <button
-              type='button'
-              className='bg-neutral-300 rounded pr-8 pl-8 flex items-center justify-center gap-2'
-              onClick={signGoogle}
-            >
-              SignUp with <img src={google} alt="img" className='w-10 h-10' />
-            </button> */}
+          <p className='text-[13px]'> Already have a account
+             <div>
+                <button onClick={()=>window.open('/#/sign' , "_blank")}  className=' underline hover:bg-neutral-400 py-2 px-3 rounded-md'> 
+            Sign In
+            </button> 
+             </div> 
+             </p>
+
+
+           
           </form>
         </div>
         <Outlet />
@@ -151,3 +150,4 @@ function CreateAccount() {
 }
 
 export default CreateAccount;
+            
