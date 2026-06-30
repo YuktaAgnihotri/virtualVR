@@ -12,9 +12,10 @@ function Hero() {
             </span>
         </h1>
         <p className='mt-10 text-lg text-center text-neutral-500 max-w-4xl'>
- Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magnam rem, dolorum sequi velit aliquid hic et
-  repudiandae pariatur, facere architecto rerum. Sunt incidunt tempora sed dolorum accusamus nesciunt veniam asperiores modi nulla 
- 
+          Bypass the trial and error of prompt 
+          engineering. promptNExt gives you instant
+           access to a curated repository of developer
+           -tested AI prompts. Find anything you  need, copy it, and deploy faster.
         </p>
         <div className='flex  justify-center  gap-10 my-10'>
           <a href="#"

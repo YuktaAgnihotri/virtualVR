@@ -2,6 +2,8 @@ import React,{useContext} from 'react'
 import {Auth} from "./AuthContext"
 import { Link } from 'react-router-dom';
 import Api from './Api';
+
+
 function UserPg() {  
   const {user,logout }= useContext(Auth);
   return (

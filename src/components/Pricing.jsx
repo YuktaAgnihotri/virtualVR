@@ -13,10 +13,9 @@ function Pricing() {
                    <span className='text-2xl'>$0 </span>
                     <span className='text-neutral-500 text-sm'> /month </span> 
                     <ul className='list-disc list-inside'>
-                        <li>Lorem ipsum dolor sit amet .</li>
-                        <li>Lorem ipsum dolor sit amet .</li>
-                        <li>Lorem ipsum dolor sit amet .</li>
-                        <li>Lorem ipsum dolor sit amet .</li>
+                        <li>Filtering prompts</li>
+                        <li>Variety of 20+ prompts .</li>
+                        
                     </ul>
                     <button className='pb-0 pt-0 m-2 pr-30 pl-30 lg:pr-10 lg:pl-10 bg-purple-400 rounded hover:bg-purple-700'> Subscribe</button>
               </div>
@@ -29,10 +28,10 @@ function Pricing() {
                    <span className='bg-gradient-to-r from bg-purple-500 to-purple-950 bg-clip-text text-transparent font-medium text-[20px]'> (most popular)</span>
                     <span className='text-neutral-500 text-sm'> /month </span> 
                     <ul className='list-disc list-inside'>
-                        <li>Lorem ipsum dolor sit amet .</li>
-                        <li>Lorem ipsum dolor sit amet .</li>
-                        <li>Lorem ipsum dolor sit amet .</li>
-                        <li>Lorem ipsum dolor sit amet .</li>
+                        <li>Filtering of Prompts.</li>
+                        <li>Variety of 50+ Prompts .</li>
+                        <li>Bookmark and save prompts.</li>
+
                     </ul>
                     <button className='pb-0 pt-0 m-2 pr-30 pl-30 lg:pr-10 lg:pl-10 bg-purple-400 rounded hover:bg-purple-700'> Subscribe</button>
               </div>
@@ -44,10 +43,10 @@ function Pricing() {
                    <span className='text-2xl'>$30 </span>
                     <span className='text-neutral-500 text-sm'> /month </span> 
                     <ul className='list-disc list-inside'>
-                        <li>Lorem ipsum dolor sit amet .</li>
-                        <li>Lorem ipsum dolor sit amet .</li>
-                        <li>Lorem ipsum dolor sit amet .</li>
-                        <li>Lorem ipsum dolor sit amet .</li>
+                         <li>Filtering of Prompts.</li>
+                        <li>Variety of 100+ Prompts .</li>
+                        <li>Bookmark and save prompts.</li>
+                         <li> Manage and organize prompts for diffrent department of employees</li>
                     </ul>
                     <button className='pb-0 pt-0 m-2 pr-30 pl-30 lg:pr-10 lg:pl-10  bg-purple-400 rounded hover:bg-purple-700'> Subscribe</button>
               </div>
