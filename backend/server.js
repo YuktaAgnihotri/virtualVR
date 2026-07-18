@@ -101,30 +101,11 @@ async function authenticateToken(req, res, next) {
   }
 }
 
-// Prompts parsing logic
-function getPromptsFromConstants() {
-  const filePath = path.resolve(__dirname, '../src/constants/constant.jsx');
-  if (!fs.existsSync(filePath)) {
-    throw new Error(`constants file not found at ${filePath}`);
-  }
-
-  const content = fs.readFileSync(filePath, 'utf8');
-  const index = content.indexOf('export const prompts =');
-  if (index === -1) {
-    throw new Error('prompts array not found in constant.jsx');
-  }
-
-  const slice = content.substring(index).replace('export const prompts =', 'prompts =');
-  const context = { prompts: null };
-  vm.createContext(context);
-  vm.runInContext(slice, context);
-  return context.prompts;
-}
+const prompts = require('../src/constants/prompts.json');
 
 // Route to fetch prompts - Protected by Firebase JWT middleware
 app.get('/api/prompts', authenticateToken, (req, res) => {
   try {
-    const prompts = getPromptsFromConstants();
     res.json(prompts);
   } catch (error) {
     console.error('Failed to get prompts:', error);
@@ -137,6 +118,11 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'healthy', firebaseProjectId: FIREBASE_PROJECT_ID });
 });
 
-app.listen(PORT, () => {
-  console.log(`Backend server running on http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Backend server running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
+
