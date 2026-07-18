@@ -22,7 +22,12 @@ export default function Api() {
     const fetchPrompts = async () => {
       try {
         const response = await api.get('/api/prompts');
-        setPrompts(response.data);
+        if (Array.isArray(response.data)) {
+          setPrompts(response.data);
+        } else {
+          console.error("Invalid data format received:", response.data);
+          setError("Unable to retrieve prompts due to configuration error. Invalid API response format.");
+        }
       } catch (err) {
         console.error("Error fetching prompts:", err);
         setError("Unable to retrieve prompts. Please ensure you are logged in and backend is running.");
@@ -33,9 +38,11 @@ export default function Api() {
     fetchPrompts();
   }, []);
 
-  const filteredPrompts = filter === "all"
-    ? prompts
-    : prompts.filter(dat => dat.tags.includes(filter));
+  const filteredPrompts = Array.isArray(prompts)
+    ? (filter === "all"
+      ? prompts
+      : prompts.filter(dat => dat && Array.isArray(dat.tags) && dat.tags.includes(filter)))
+    : [];
 
   return (
     <>
