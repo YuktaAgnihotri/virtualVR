@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import google from '../assets/google.png'
-import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signOut } from 'firebase/auth';
+import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signOut, updateProfile } from 'firebase/auth';
 import { firebaseapp } from './firebase';
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { Auth } from './AuthContext';
@@ -23,10 +23,8 @@ function CreateAccount() {
     seterror("");
     try {
       const result = await createUserWithEmailAndPassword(firebaseAuth, email, Password);
-      if(!result.ok){
-        console.log("couldn't create user");
-      }
       console.log("success", result.user);
+      await updateProfile(result.user, { displayName: username });
       login();
     } catch (err) {
       console.log(err);
